@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+//break
+function check() {
+	var a=prompt("Enter you values");
+	var b=prompt("Enter you values");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+function add() {
+	var a =document.getElementsByName("t1");
+	var b =document.getElementsByName("t2");
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+}
+function sub() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c-d);
+}
+function mul() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c*d);
+}
+function div() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c/d);
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+<input type="text" name="t1" id="text1">
+<input type="text" name="t2" id="text2">
+<input type="button" value="Add" onclick="add()">
+<input type="button" value="Sub" onclick="sub()">
+<input type="button" value="Mul" onclick="mul()">
+<input type="button" value="Div" onclick="div()">
+</form>
+
+
+<input type="button" value="CallAdd" onclick="check()">
+</body>
+</html>
